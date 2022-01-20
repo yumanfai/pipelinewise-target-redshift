@@ -438,7 +438,7 @@ class DbSync:
 
                 # Step 3: Generate copy options - Override defaults from config.json if defined
                 copy_options = self.connection_config.get('copy_options',"""
-                    EMPTYASNULL BLANKSASNULL TRIMBLANKS TRUNCATECOLUMNS
+                    ACCEPTANYDATE EMPTYASNULL BLANKSASNULL TRIMBLANKS TRUNCATECOLUMNS
                     TIMEFORMAT 'auto'
                     COMPUPDATE OFF STATUPDATE OFF
                 """)
